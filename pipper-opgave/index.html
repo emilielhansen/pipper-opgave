@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- META-TAGS -->
@@ -9,36 +10,104 @@
 
     <!-- LINKS -->
     <link rel="stylesheet" href="style.css">
-    <script src="modalbox.js"></script>
+    <script src="script.js"></script>
 
     <title>Pipper</title>
 </head>
 
 <!-- BODY -->
+
 <body>
     <!-- VENSTRE SIDEBAR MENU -->
-    <div class="sidebar"></div>
+    <div class="sidenav_venstre">
+        <img src="/pip_fugl_logo.png" alt="logo" id="logo">
+        <a href="#">Hjem</a>
+        <a href="#">Udforsk</a>
+        <a href="#">Notifikationer</a>
+        <a href="#">Beskeder</a>
+        <a href="#">Bogmærker</a>
+        <a href="#">Liste</a>
+        <a href="#">Profil</a>
+        <a href="#">Mere</a>
 
-    <!-- MODAL-BOX -->
-      <!-- Trigger/Open The Modal -->
-      <button id="writePipButton">Skriv pip</button>
-
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-
-       <!-- SKRIV TWEET -->
-       <div class="modal-content">
-       </div>
-
-    <!-- PIP-FEED -->
-    <div class="feed">
-        <div class="avatar"></div>
-        <div class="brugernavn"></div>
-        <div class="pipBesked"></div>
+        <!-- MODAL-BOX -->
+        <!-- Trigger/Open The Modal -->
+        <button id="writePipButton">Skriv pip</button>
     </div>
 
-    <!-- HØJRE SIDEBAR MED TRENDS -->
-    <div class="trendsBar"></div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- SKRIV TWEET -->
+        <div class="modal-content">
+        </div>
+
+        <!-- PIP-FEED -->
+        <div class="feed">
+            <div class="avatar"></div>
+            <div class="brugernavn"></div>
+            <div class="pipBesked"></div>
+        </div>
+
+        <!-- HØJRE SIDEBAR MED TRENDS -->
+        <div class="sidenav_højre">
+            <div class="søgefunktion">
+                <input type="text" placeholder="Search.." id="search">
+            </div>
+            <div class="populære_pips">
+                <h1>Populære pips</h1>
+            </div>
+            
+            
+
+
+
+
+            <div class="følg">
+                <h1>Folk du vil synes om</h1>
+            </div>
+        
+            <div class="row">
+                <div class="column">
+                    <img src="/pip_fugl_logo.png" alt="billede" id="billede_cecilie">
+                </div>
+                <div class="column">
+                    <p id="navn">Cecilie Valija Ulrich</p>
+                    <p id="brugernavn">@Cecilie89756472</p>
+                </div>
+                <div class="column">
+                    <button id="følg_knap">Følg</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="/pip_fugl_logo.png" alt="billede" id="billede_cecilie">
+                </div>
+                <div class="column">
+                    <p id="navn">Emilie Lenschau Hansen</p>
+                    <p id="brugernavn">@Emilie92756354</p>
+                </div>
+                <div class="column">
+                    <button id="følg_knap">Følg</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="/pip_fugl_logo.png" alt="billede" id="billede_cecilie">
+                </div>
+                <div class="column">
+                    <p id="navn">Sebastian Christensen</p>
+                    <p id="brugernavn">@Sebastian36254879</p>
+                </div>
+                <div class="column">
+                    <button id="følg_knap">Følg</button>
+                </div>
+            </div>
+        </div>
 
 </body>
 </html>
