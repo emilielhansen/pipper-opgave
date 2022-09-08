@@ -11,7 +11,7 @@
     top: 0;
     /* Stay at the top */
     left: 0;
-    background-color: #111;
+    background-color: #f55f;
     /* Black */
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -23,14 +23,14 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: #111;
     display: block;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav_venstre a:hover {
-    color: #f1f1f1;
+    color: #111;
 }
 
 /* Style page content */
@@ -72,13 +72,28 @@
 }
 
 
-
-
-
-
+.container{
+    display:block;
+    margin-left: 190px;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid #111;
+    padding: 20px;
+}
+#billede_avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.bruger{
+    display: flex;
+}
+#person{
+    margin-left: 10px;
+}
 /* sidebar i højre side */
 
-.sidenav_højre {
+.sidenav_hoejre {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
     width: 400px;
@@ -90,7 +105,7 @@
     top: 0;
     /* Stay at the top */
     right: 0;
-    background-color: #111;
+    background-color: #f55f;
     /* Black */
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -107,45 +122,46 @@
 
 
 /* Populære pips i højre side */
-.populære_pips {
+.populaere_pips {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 13px;
-    color: #818181;
+    color: #111;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 /* Folk du vil synes om (følg) i højre side */
-.følg {
+.foelg {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 13px;
-    color: #818181;
+    color: #111;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#billede_cecilie {
-    width: 50px;
+#billede_person {
+    width: 60px;
     height: 60px;
+    border-radius: 50%;
 }
 
 #navn {
     text-decoration: none;
     font-size: 15px;
-    color: #818181;
+    color: #111;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #brugernavn {
     text-decoration: none;
     font-size: 15px;
-    color: #818181;
+    color: #111;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#følg_knap {
+#foelg_knap {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
