@@ -1,1 +1,0 @@
-<!-- PHP TIL AT LÆSE PIPS FRA DATABASE -->
