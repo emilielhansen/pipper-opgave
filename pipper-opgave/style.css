@@ -1,6 +1,4 @@
-/* CECILIES CSS - START */
-
-/* Sidebar i venstre side */
+/* SIDEBAR I VENSTRE SIDE STARTER */
 .sidenav_venstre {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
@@ -48,22 +46,13 @@
     /* Same as the width of the sidebar */
     padding: 0px 10px;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav_venstre {
-        padding-top: 15px;
-    }
-
-    .sidenav_venstre a {
-        font-size: 18px;
-    }
-}
+/* SIDEBAR I VENSTRE SIDE SLUTTER*/
 
 
 
 
-/* Knap til at lave pip i venstre sidebar */
+/* iNDHOLD I VENSTRE SIDEBAR */
+/* knap til pip i venstre side - modal box åben */
 #writePipButton {
     margin-top: 30px;
     margin-left: 15px;
@@ -72,15 +61,20 @@
     font-size: 15px;
 }
 
-/* Logo i venstre sidebar */
+/* logo i venstre sidebar*/
 #logo {
     width: 50px;
     height: 50px;
     margin-bottom: 30px;
     margin-left: 15px;
 }
+/* iNDHOLD I VENSTRE SIDEBAR SLUT*/
 
-/* Pip feed starter */
+
+
+
+
+/* PIP FEED STARTER - MIDSTEN AF SIDEN */
 .container{
     display:block;
     margin-left: 190px;
@@ -89,20 +83,29 @@
     border: 2px solid #111;
     padding: 20px;
 }
+/* Billede af bruger - midten af siden */
 #billede_avatar{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
+/* Bruger box indeholder = person + avatar  */
 .bruger{
     display: flex;
 }
+
+/* brugernavn på personen */
 #person{
     margin-left: 10px;
 }
-/* Pip feed slutter */
-/* sidebar i højre side */
+/* PIP FEED SLUTTER - MIDTEN AF SIDEN */
 
+
+
+
+
+
+/* SIDEBAR I HØJRE SIDE STARTER */
 .sidenav_hoejre {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
@@ -123,8 +126,11 @@
     border: grey 0.5px solid;
   
 }
+/* SIDEBAR I HØJRE SIDE SLUTTER */
 
 
+
+/* INDHOLD I HØJRE SIDEBAR */
 /* Søgefunktion i højre side */
 #search {
     margin-left: 25px;
@@ -152,41 +158,59 @@
     padding: 5px;
 }
 
+/* Hvert afsnit i højresidebar - indholder kategori, symbol, tags, views */
 .tranding{
     transition-duration: 0,4s;
 }
+
+/* Hover over afsnit i højre sidebar */
 .tranding:hover {
     width: 103%;
     background-color: #d2d0d067;
     color: #e5e4e2;
 }
+
+/* katagori + symbol ligger i denne */
 .big_tags{
     display: flex;
     
 }
+
+/* Lille overskrift i højre sidebar */
 .kategori{
     color: #8b8589;
 }
+
+/* Prikker i højre siebar */
 .symbol{
     padding-top: 7px;
     
 }
+
+/* Views i højre sidebar - sete pips */
 .views{
     color: #8b8589;
 }
+
+/* Prikker i højre siebar */
 #symbol1{
     color: #8b8589;
     margin-left:100px;
 }
+
+/* Prikker i højre siebar */
 #symbol2{
     color: #8b8589;
     margin-left:92px;
 }
+
+/* Prikker i højre siebar */
 #symbol3{
     color: #8b8589;
     margin-left:155px;
 }
 
+/* Tags i højre siebar */
 .tags {
     text-decoration: none;
     color: #111;
@@ -204,6 +228,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Billede af person i højre sidebar */
 #billede_person {
     width: 40px;
     height: 40px;
@@ -211,6 +236,7 @@
     margin-left: 40px;
 }
 
+/* Navn i højre sidebar */
 #navn {
     text-decoration: none;
     font-size: 12px;
@@ -218,6 +244,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Brugernavn i højre sidebar */
 #brugernavn {
     text-decoration: none;
     font-size: 12px;
@@ -225,6 +252,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Følg knappen i højre sidebar*/
 #foelg_knap {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -247,20 +275,26 @@
     display: table;
     clear: both;
   }
+/* INDHOLD I HØJRE SIDEBAR */
 
 
 
 
 
+
+/* MODAL BOX START */
+/* input brugernavn - modal box */
 #indtast_brugernavn {
     margin-bottom: 10px;
 }
  
+/* input pip - modal box */
 #indtast_pip {
     width: 500px;
     height: 100px;
 }
  
+/* knap pip - modal box */
 #button_pip {
     margin-top: 10px;
 }
@@ -294,11 +328,12 @@
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: green;
     text-decoration: none;
     cursor: pointer;
   }
 
+  /* Indhold i modal box */
 #note-form{
     /* padding-left: 550px; */
         position: absolute;
@@ -315,5 +350,4 @@
         -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
         box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
-
-/* CECILIES CSS - SLUT */
+/* MODAL BOX SLUT */
