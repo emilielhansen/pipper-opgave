@@ -80,9 +80,16 @@
     margin-left: 190px;
     margin-right: auto;
     width: 50%;
-    border: 2px solid #111;
     padding: 20px;
 }
+
+/* Boks til hvert pip */
+.pip-boks{
+    border: 2px solid #111;
+    padding: 20px;
+    margin: 10px;
+}
+
 /* Billede af bruger - midten af siden */
 #billede_avatar{
     width: 60px;
