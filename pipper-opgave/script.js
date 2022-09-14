@@ -1,29 +1,25 @@
-//CECILIES JS START
-
-// Get the modal
+// Henter modal afsnittet fra vores html
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+// Henter knappen som åbner vores modal, i html
 var btn = document.getElementById("writePipButton");
 
-// Get the <span> element that closes the modal
+// Henter span (<span class="close">&times;</span>) som er et kryds der lukker modal box
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// Når brugeren klikker på knappen, åbnes modal boxen
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Når brugeren klikker på krydset (<span class="close">&times;</span>), lukkes modal boxen
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Når brugeren klikker steder uden for boxen, lukkes den
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-
-//CECILIE JS SLUT
