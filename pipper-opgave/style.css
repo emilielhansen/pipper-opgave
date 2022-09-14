@@ -1,3 +1,5 @@
+/* CECILIES CSS - START */
+
 /* Sidebar i venstre side */
 .sidenav_venstre {
     height: 100%;
@@ -11,11 +13,12 @@
     top: 0;
     /* Stay at the top */
     left: 0;
-    background-color: #f55f;
+    background-color: #fff;
     /* Black */
     overflow-x: hidden;
     /* Disable horizontal scroll */
     padding-top: 20px;
+    border: grey 0.5px solid;
 }
 
 /* The navigation menu links */
@@ -117,6 +120,8 @@
     overflow-x: hidden;
     /* Disable horizontal scroll */
     padding-top: 20px;
+    border: grey 0.5px solid;
+  
 }
 
 
@@ -242,3 +247,395 @@
     display: table;
     clear: both;
   }
+
+
+
+
+
+#indtast_brugernavn {
+    margin-bottom: 10px;
+}
+ 
+#indtast_pip {
+    width: 500px;
+    height: 100px;
+}
+ 
+#button_pip {
+    margin-top: 10px;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+ 
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#note-form{
+    /* padding-left: 550px; */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: black 2px solid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        background-color: white;
+        -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+/* CECILIES CSS - SLUT */
+
+
+
+/* CECILIES CSS - START */
+
+/* Sidebar i venstre side */
+.sidenav_venstre {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 190px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #fff;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    border: grey 0.5px solid;
+}
+
+/* The navigation menu links */
+.sidenav_venstre a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #111;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+ font-size: 22px;
+ padding-right: 10px;
+ color: #111;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav_venstre a:hover {
+    color: #111;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav_venstre {
+        padding-top: 15px;
+    }
+
+    .sidenav_venstre a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* Knap til at lave pip i venstre sidebar */
+#writePipButton {
+    margin-top: 30px;
+    margin-left: 15px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* Logo i venstre sidebar */
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+/* Pip feed starter */
+.container{
+    display:block;
+    margin-left: 190px;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid #111;
+    padding: 20px;
+}
+#billede_avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.bruger{
+    display: flex;
+}
+#person{
+    margin-left: 10px;
+}
+/* Pip feed slutter */
+/* sidebar i højre side */
+
+.sidenav_hoejre {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 400px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color:rgb(255, 255, 255);
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    border: grey 0.5px solid;
+  
+}
+
+
+/* Søgefunktion i højre side */
+#search {
+    margin-left: 25px;
+    margin-bottom: 12px;
+    height: 20px;
+    width: 180px;
+    border: 2px solid #e5e4e2;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+/* Populære pips i højre side */
+.populaere_pips {
+    width: 260px;
+    margin-left: 25px;
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f5f5f5 ;
+    border: 2px solid #f5f5f5;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.tranding{
+    transition-duration: 0,4s;
+}
+.tranding:hover {
+    width: 103%;
+    background-color: #d2d0d067;
+    color: #e5e4e2;
+}
+.big_tags{
+    display: flex;
+    
+}
+.kategori{
+    color: #8b8589;
+}
+.symbol{
+    padding-top: 7px;
+    
+}
+.views{
+    color: #8b8589;
+}
+#symbol1{
+    color: #8b8589;
+    margin-left:100px;
+}
+#symbol2{
+    color: #8b8589;
+    margin-left:92px;
+}
+#symbol3{
+    color: #8b8589;
+    margin-left:155px;
+}
+
+.tags {
+    text-decoration: none;
+    color: #111;
+}
+
+
+
+/* Folk du vil synes om (følg) i højre side */
+.foelg {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 11px;
+    color: #111;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#billede_person {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+#navn {
+    text-decoration: none;
+    font-size: 12px;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#brugernavn {
+    text-decoration: none;
+    font-size: 12px;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#foelg_knap {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-color: aquamarine;
+}
+
+.column {
+    float: left;
+    width: 27.33%;
+    
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+#indtast_brugernavn {
+    margin-bottom: 10px;
+}
+ 
+#indtast_pip {
+    width: 500px;
+    height: 100px;
+}
+ 
+#button_pip {
+    margin-top: 10px;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+ 
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#note-form{
+    /* padding-left: 550px; */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: black 2px solid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        background-color: white;
+        -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+/* CECILIES CSS - SLUT */
