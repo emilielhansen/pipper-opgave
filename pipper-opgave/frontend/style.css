@@ -11,7 +11,8 @@
     top: 0;
     /* Stay at the top */
     left: 0;
-    background-color: #fff;
+    background-color: #677C77;
+
     /* Black */
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -56,9 +57,12 @@
 #writePipButton {
     margin-top: 30px;
     margin-left: 15px;
-    background-color: white;
+    padding: 7px 12px;
+    background-color: #9DBB8F;
+    border: none;
+    border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 22px;
 }
 
 /* logo i venstre sidebar*/
@@ -125,7 +129,7 @@
     top: 0;
     /* Stay at the top */
     right: 0;
-    background-color:rgb(255, 255, 255);
+    background-color:#677C77;
     /* Black */
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -144,7 +148,8 @@
     margin-bottom: 12px;
     height: 20px;
     width: 180px;
-    border: 2px solid #e5e4e2;
+    border: 2px solid #8EA076;
+    background-color: #9DBB8F;
     border-radius: 15px;
     padding: 5px;
 
@@ -159,8 +164,8 @@
     font-size: 10px;
     color: #111;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#f5f5f5 ;
-    border: 2px solid #f5f5f5;
+    background-color:#9DBB8F ;
+    border: 2px solid #9DBB8F;
     border-radius: 15px;
     padding: 5px;
 }
@@ -185,7 +190,7 @@
 
 /* Lille overskrift i højre sidebar */
 .kategori{
-    color: #8b8589;
+    color: #677C77;
 }
 
 /* Prikker i højre siebar */
@@ -196,24 +201,24 @@
 
 /* Views i højre sidebar - sete pips */
 .views{
-    color: #8b8589;
+    color: #677C77;
 }
 
 /* Prikker i højre siebar */
 #symbol1{
-    color: #8b8589;
+    color: #677C77;
     margin-left:100px;
 }
 
 /* Prikker i højre siebar */
 #symbol2{
-    color: #8b8589;
+    color: #677C77;
     margin-left:92px;
 }
 
 /* Prikker i højre siebar */
 #symbol3{
-    color: #8b8589;
+    color: #677C77;
     margin-left:155px;
 }
 
@@ -261,17 +266,19 @@
 
 /* Følg knappen i højre sidebar*/
 #foelg_knap {
-    background-color: white;
+    background-color: #9DBB8F;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
     margin-top: 25px;
     margin-left: 25px;
-    border-color: aquamarine;
+    border: none;
 }
 
 .column {
     float: left;
-    width: 27.33%;
+    width: 26.33%;
     
     
   }
@@ -335,7 +342,7 @@
   
   .close:hover,
   .close:focus {
-    color: green;
+    color: #9DBB8F;
     text-decoration: none;
     cursor: pointer;
   }
