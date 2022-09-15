@@ -54,24 +54,19 @@ catch(PDOException $e) {
 
 
 
+DET VIRKER NÆSTEN
 
-
-
-
-
-//START Denitsa
 <?php
 
 // CONNECT TIL DB
 // Inkluder til password i din .env fil
-
-
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+header("Access-Control-Allow-Credentials : true");
 
 
 // Her connecter du til databasen
@@ -83,11 +78,13 @@ $servername = "localhost:3306";
 $username = "root";
 
 // Dit password som du henter fra .env filen
-$password = 'sivataMechka2022';
+$password = 'Bella1234';
 
-if ($requestType == "GET") {
+$requestType = $_SERVER["REQUEST_METHOD"];
+
+if ($requestType === "GET") {
   try {
-    $conn = new PDO("mysql:host=$servername;dbname=test", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=pipper-opgave", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $statement = $conn->query("select * from pips");
@@ -97,23 +94,33 @@ if ($requestType == "GET") {
   } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
   }
-} elseif ($requestType == "POST") {
+} elseif ($requestType === "POST") {
   try {
-    $connection = getDbConnection();
-    $statement = $connection->prepare($statement);
+      $statement = 
+      "
+      INSERT INTO pips 
+            (username, pipmessage) 
+            VALUES
+            (:username, :pip);
+      ";
+
+    $conn = new PDO("mysql:host=$servername;dbname=pipper-opgave", $username, $password);
+    $statement = $conn->prepare($statement);
     $statement->execute(array(
+      'pipmessage' => $input['pip'],
       'username' => $input['username'],
-      'pip' => $input['pip'],
     ));
 
-    $id = $connection->lastInsertId();
+    $id = $conn->lastInsertId();
     $pip = (object) $input;
     $pip->id = $id;
 
     $response['status_code_header'] = 'HTTP/1.1 201 Created';
     $response['body'] = json_encode($pip);
     return $response;
-  } catch (\PDOException $e) {
+    
+  } 
+  catch (\PDOException $e) {
     exit($e->getMessage());
   }
 }
