@@ -96,6 +96,7 @@ if ($requestType === "GET") {
   }
 } elseif ($requestType === "POST") {
   try {
+      $input = (array) json_decode(file_get_contents('php://input'), TRUE);
       $statement = 
       "
       INSERT INTO pips 
