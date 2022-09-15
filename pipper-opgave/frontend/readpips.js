@@ -1,8 +1,10 @@
 // LÆS PIP FRA DB 
 
 // Først skal vi hente vores json-fil fra DB
+
+
 async function readPip() {
-    const result = await fetch("http://localhost:8000");
+    const result = await fetch("http://localhost:8000", { method: "GET" });
     const pipFromDB = await result.json();
 
     // Så henter vi hvert element fra vores objekt
@@ -10,9 +12,15 @@ async function readPip() {
         for(pip in pipFromDB){
         items.push(pipFromDB[pip]);
         }
+ 
+        // I dette forloop henter vi et number ned som vi skal bruge til at give en random avatar senere. 
+        for (var i = 1; i < 5; i++) {
+            const number = 1 + i;
+            console.log(number);
+        }
 
-    // Vi looper hen over hvert array i DB
-    pipFromDB.forEach(function (pip) {
+    // Vi looper hen over hvert array i DB og henter også number med ind.
+    pipFromDB.forEach(function (pip, number) {
 
         // Opret en div hvori du indsætter dine pip-værdier
         // Vores objekt ser sådan ud:
@@ -26,12 +34,15 @@ async function readPip() {
             },
         */    
 
+        // H 
+        var avatar = "https://xsgames.co/randomusers/assets/avatars/pixel/" + number + ".jpg"
+              
         // 
         const element = 
         `
         <div class ="pip-boks">
         <div class="bruger">
-            <div class="avatar"><img src="https://xsgames.co/randomusers/avatar.php?g=pixel"
+            <div class="avatar"><img src="${avatar}"
                     alt="billede" id="billede_avatar"></div>
 
             <div class="brugernavn">
@@ -53,6 +64,7 @@ async function readPip() {
 }
 
 readPip();
+
 
 
 
